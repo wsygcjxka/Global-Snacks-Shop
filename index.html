@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Snacks Shop</title> 
+    <script src="https://kit.fontawesome.com/176fc27d7d.js" crossorigin="anonymous"></script>
+
+    <!--
+    - favicon
+    -->
+    <link rel="shortcut icon" href="./logo.png.jpg" type="image/x-icon">
+
+    <!--
+    - custom css link
+    -->
+    <link rel="stylesheet" href="./style.css">
+
+
+    <!--
+    - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+</head>
+
+<body>
+
+    <div class="overlay" data-overlay></div>
+
+    <!--
+    - MODAL
+    -->
+
+    <div class="modal " data-modal>
+
+        <div class="modal-close-overlay " data-modal-overlay></div>
+
+        <div class="modal-content">
+
+            <button class="modal-close-btn" data-modal-close>
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="newsletter-img">
+                <img src="newsletter.png.jpg" alt="subscribe newsletter" width="400"
+                height="400">
+            </div>
+
+            <div class="newsletter">
+
+                <form action="#">
+
+                    <div class="newsletter-header">
+
+                        <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+
+                        <p class="newsletter-desc">
+                            Subscribe the <b>Global Snacks</b> to get latest products and discount update.
+                        </p>
+
+                    </div>
+
+                    <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+
+                    <button type="submit" class="btn-newsletter">Subscribe</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+  <!--
+    - HEADER
+  -->
+  
+ 
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <ion-icon name="logo-twitter"></icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b>Welcome To  </b>
+            Global Snacks Shop
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="usd">MYR RM</option>
+            <option value="eur">USD &dollar;</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="en-US">English</option>
+            <option value="es-ES">Melayu</option>
+            <option value="fr">Chinese</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+      
+        <a href="#" class="header-logo">
+          <img src="./logo.png.jpg" alt="Global Snacks Shop's logo" width="110" height="100">
+        </a>
+      
+        <div class="header-search-container">
+      
+        <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+      
+        <button class="search-btn">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      
+        </div>
+      
+        <div class="header-user-actions">
+      
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+      
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+
+          <a href="snacks.html" class="logo"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      
+      </div>
+      
+    </div>
+
+      <section class="header">
+        
+    <nav class="desktop-navigation-menu ">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list ">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="Categories" class="menu-title">Categories</a>
+            
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Products</a>
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">America</a>
+                </li>
+
+                <ul class="dropdown-panel-list">
+
+                  <li class="menu-title">
+                    <a href="#">China</a>
+                  </li>
+
+                <ul class="dropdown-panel-list">
+
+                    <li class="menu-title">
+                      <a href="#">Japan</a>
+                    </li>
+
+                <ul class="dropdown-panel-list">
+
+                      <li class="menu-title">
+                        <a href="#">Korea</a>
+                      </li>
+
+                  <ul class="dropdown-panel-list">
+
+                        <li class="menu-title">
+                          <a href="#">Malaysia</a>
+                        </li>
+                    
+                  <ul class="dropdown-panel-list">
+
+                          <li class="menu-title">
+                            <a href="#">Thailand</a>
+                          </li>
+
+              </ul>
+
+            </ul>
+
+          </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">About Us</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Review</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Contact</a>
+
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Order</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+      </section>
+
+    <nav class="mobile-navigation-menu  has-scrollbar " data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      
+        <li class="menu-category">
+
+          <button class="accordion-menu" >
+            <p class="menu-title">Products</p>
+
+          </button>
+
+          <ul class="mobile-menu-category-list">
+
+            <li class="menu-category">
+              <a href="#" class="menu-title">Home</a>
+            </li>
+    
+            <li class="menu-category">
+    
+              <button class="accordion-menu" data-accordion-btn>
+                <p class="menu-title">Categories</p>
+              </button>
+
+              <button class="accordion-menu" data-accordion-btn>
+                <p class="menu-title">Products</p>
+                <i class="fa-solid fa-caret-right"></i>
+    
+              <ul class="submenu-category-list " data-accordion>
+    
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">America</a>
+                </li>
+    
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">China</a>
+                </li>
+    
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">Japan</a>
+                </li>
+    
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">Korea</a>
+                </li>
+    
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">Malaysia</a>
+                </li>
+    
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">Thailand</a>
+                </li>
+    
+              </ul>
+    
+            </li>
+    
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu">
+            <p class="menu-title">About Us</p>
+
+          </button>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu">
+            <p class="menu-title">Review</p>
+
+          </button>
+
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Contact</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Order</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Language</p>             
+              <i class="fa-solid fa-caret-down"></i>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list " data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Melayu</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Chinese</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Currency</p>
+              <i class="fa-solid fa-caret-down"></i>
+              <ion-icon name="diamond-half-putline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">MYR RM</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">USD &dollar;</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+<!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - BANNER
+    -->
+
+    <div class="banner">
+
+      <div class="container">
+
+        <div class="slider-container has-scrollbar">
+
+          <div class="slider-item">
+
+            <img src="./banner-1.jpg.jpg" alt="snacks" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Whatever Happens In Your Life,Just Have A Snack.</p>
+
+              <h2 class="banner-title">Snacks Make You Smile</h2>
+
+              <p class="banner-text">
+                all snacks starting at RM <b>5</b>.00
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./banner-2.jpg.jpg" alt="new snack" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">New Snack</p>
+
+              <h2 class="banner-title">Chips</h2>
+
+              <p class="banner-text">
+                starting at RM <b>7</b>.00
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./banner-3.jpg.jpg" alt="hot sale" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Hot Sale</p>
+
+              <h2 class="banner-title">Healthy Snack</h2>
+
+              <p class="banner-text">
+                starting at &dollar; <b>30</b>.00
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!--
+      - Categories
+    -->
+
+    <section class="#Categories" id="#Categories">
+      <div class="h">
+      <h1>Categories</h1>
+      </div>
+      <div class="items">
+
+      <div class="item"> 
+          <img src="./america.jpg">
+          <h4>America's Snacks</h4>
+          <a target="_self" href="#index.html">
+          <button>View</button></a>
+      </div>
+
+      <div class="item">
+          <img src="./china.jpg">
+          <h4>China's Snacks</h4>
+          <a target="_self" href="index.html">
+          <button>View</button></a>
+      </div>
+
+      <div class="item">
+          <img src="./japan.jpg">
+          <h4>Japan's Snacks</h4>
+          <a target="self" href="index.html">
+          <button>View</button></a>
+      </div>
+
+      <div class="item">
+          <img src="./korea.jpg">
+          <h4>Korea's Snacks</h4>
+          <a target="_self" href="index.html">
+          <button>View</button></a>
+      </div>
+
+      <div class="item">
+          <img src="./malaysia.jpg">
+          <h4>Malaysia's Snacks<h4>
+          <a target="_self" href="index.html">
+          <button>View</button></a>
+      </div>
+
+      <div class="item">
+        <img src="./thailand.jpg">
+        <h4>Thailand's Snacks</h4><h4>
+        <a target="_self" href="index.html">
+        <button>View</button></a>
+    </div>
+
+  </div>
+
+  </section>
+
+  <!--
+   - Products
+    -->
+
+<section class="products" id="products">
+
+  <h1 class="heading"> Products</h1>
+  <h1 class="heading"> America's Snacks</h1>
+
+  
+  <section class="America" id="America">
+    
+  <div class="box-container">
+    <div class="box">
+          <div class="image">
+              <img src="./lay's-chip.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Lay's Classic Potato Chips (2 packs) </h3>
+              <div class="price"> RM 7 </div>
+          </div>
+    </div>
+
+        <div class="box">
+          <div class="image">
+              <img src="./oreo-cookie.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Oreo Cookie Snacks (Family size)</h3>
+              <div class="price"> RM 13 </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+              <img src="./nestle-toll-house.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Nestle Toll House Morsels</h3>
+              <div class="price"> RM 40 </div>
+          </div>
+        </div>
+
+          <div class="box">
+          <div class="image">
+              <img src="./frito-twists.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>        
+          <div class="content">
+              <h3>Fritos Twists Honey BBQ</h3>
+              <div class="price"> RM 20</div>
+          </div>
+       </div>
+
+       <div class="box">
+          <div class="image">
+              <img src="./pepperidge-farm-goldfish.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Pepperidge Farm Goldfish (Original taste)</h3>
+              <div class="price"> RM 19</div>
+          </div>
+          </div>
+
+          <div class="box">
+          <div class="image">
+              <img src="./reese's.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Reese's Peanut Butter Cups Minature Cups</h3>
+              <div class="price"> RM 20 </div>
+          </div>
+        </div>
+
+
+  </div>
+
+</section>
+</section>
+
+
+<section class="products" id="products">
+
+  <h1 class="heading"> China's Snacks</h1>
+
+  
+  <section class="China" id="China">
+    
+  <div class="box-container">
+    <div class="box">
+          <div class="image">
+              <img src="./latiao.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Weilong Spicy Strips Snacks Super (5 packs) </h3>
+              <div class="price"> RM 20 </div>
+          </div>
+    </div>
+
+        <div class="box">
+          <div class="image">
+              <img src="./moyushuang.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Weilong Mo Yu Shuang    (20 packs)</h3>
+              <div class="price"> RM 16 </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+              <img src="./yam-chip.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Yu Wei Zhi Yuan Yam Chip (6 packs)</h3>
+              <div class="price"> RM 14 </div>
+          </div>
+        </div>
+
+          <div class="box">
+          <div class="image">
+              <img src="./mochi-sandwich.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>        
+          <div class="content">
+              <h3>Baicaoflavor Mochi Sandwich</h3>
+              <div class="price"> RM 21 </div>
+          </div>
+       </div>
+
+       <div class="box">
+          <div class="image">
+              <img src="./oatmeal.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Ocak Fruit Yougurt Oatmeal Cereal</h3>
+              <div class="price"> RM 30</div>
+          </div>
+          </div>
+
+          <div class="box">
+          <div class="image">
+              <img src="./bamboo-shoots.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3> Pickled Crispy Bamboo Shoots (10 packs per box)</h3>
+              <div class="price"> RM 28 </div>
+          </div>
+        </div>
+
+
+  </div>
+
+</section>
+</section>
+
+
+<section class="products" id="products">
+
+  <h1 class="heading"> Japan's Snacks</h1>
+
+  
+  <section class="Japan" id="Japan">
+    
+  <div class="box-container">
+    <div class="box">
+          <div class="image">
+              <img src="./pocky.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Pocky Cookies & Cream (10 packs) </h3>
+              <div class="price"> RM 36 </div>
+          </div>
+    </div>
+
+        <div class="box">
+          <div class="image">
+              <img src="./white-lover.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Ishiya Shiroi Koibito White Chocolate (12 packs)</h3>
+              <div class="price"> RM 64 </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+              <img src="./orihiro-jelly.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Orihiro Konjac Jelly Lemon (6 packs) </h3>
+              <div class="price"> RM 8 </div>
+          </div>
+        </div>
+
+          <div class="box">
+          <div class="image">
+              <img src="./tokyo-banana.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>        
+          <div class="content">
+              <h3>Tokyo Banana Original Flavor (8 pieces per box)</h3>
+              <div class="price"> RM 72 </div>
+          </div>
+       </div>
+
+       <div class="box">
+          <div class="image">
+              <img src="./caramel-corn.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Tohato Caramel Corn Bitter (Original taste)</h3>
+              <div class="price"> RM 6</div>
+          </div>
+          </div>
+
+          <div class="box">
+          <div class="image">
+              <img src="./jagabee-french-fries.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3> Calbee Jagabee Potato Sticks Snack Happy Butter</h3>
+              <div class="price"> RM 15 </div>
+          </div>
+        </div>
+
+
+  </div>
+
+</section>
+</section>
+
+
+<section class="products" id="products">
+
+  <h1 class="heading"> Korea's Snacks</h1>
+
+  
+  <section class="Korea" id="Korea">
+    
+  <div class="box-container">
+    <div class="box">
+          <div class="image">
+              <img src="./onion-spring.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Nongshim Onion Rings </h3>
+              <div class="price"> RM 7 </div>
+          </div>
+    </div>
+
+        <div class="box">
+          <div class="image">
+              <img src="./honey-butter-almond.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Tom's Farm Honey Butter Almond</h3>
+              <div class="price"> RM 30 </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+              <img src="./squid-peanut.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Orion Squid Peanut Ball </h3>
+              <div class="price"> RM 8 </div>
+          </div>
+        </div>
+
+          <div class="box">
+          <div class="image">
+              <img src="./pocachip.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>        
+          <div class="content">
+              <h3>Orion Pocachip Original</h3>
+              <div class="price"> RM 7 </div>
+          </div>
+       </div>
+
+       <div class="box">
+          <div class="image">
+              <img src="./kkokkal-corn.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Lotte Original Kko Kkal Corn Chips</h3>
+              <div class="price"> RM 9</div>
+          </div>
+          </div>
+
+          <div class="box">
+          <div class="image">
+              <img src="./honey-apple.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Nongshim Honey&Apple Twist Snack</h3>
+              <div class="price"> RM 16 </div>
+          </div>
+        </div>
+
+
+  </div>
+
+</section>
+</section>
+
+
+<section class="products" id="products">
+
+  <h1 class="heading"> Malaysia's Snacks</h1>
+
+  
+  <section class="Malaysia" id="Malaysia">
+    
+  <div class="box-container">
+    <div class="box">
+          <div class="image">
+              <img src="./snek-ku.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3></h3>
+              <div class="price"> RM 18 </div>
+          </div>
+    </div>
+
+        <div class="box">
+          <div class="image">
+              <img src="./double-decker-chicken-cracker.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Double Decker Chicken Cracker (3 packs)</h3>
+              <div class="price"> RM 6 </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+              <img src="./win-2-tomato.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Win 2 Tomato Flavor Potato Crisp (30 packs) </h3>
+              <div class="price"> RM 8 </div>
+          </div>
+        </div>
+
+          <div class="box">
+          <div class="image">
+              <img src="./mister-potato-hot-spicy.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>        
+          <div class="content">
+              <h3>Mister Potato Crisps Hot & Spicy (2 packs)</h3>
+              <div class="price"> RM 8 </div>
+          </div>
+       </div>
+
+       <div class="box">
+          <div class="image">
+              <img src="./mamee.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Mamee Monster Chicken Noodle Snack (10 packs)</h3>
+              <div class="price"> RM 6</div>
+          </div>
+          </div>
+
+          <div class="box">
+          <div class="image">
+              <img src="./roller-coaster.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Jack'n Jill Roller Coaster (2 packs)</h3>
+              <div class="price"> RM 5 </div>
+          </div>
+        </div>
+
+
+  </div>
+
+</section>
+</section>
+
+
+<section class="products" id="products">
+
+  <h1 class="heading"> Thailand's Snacks</h1>
+
+  
+  <section class="Thailand" id="Thailand">
+    
+  <div class="box-container">
+    <div class="box">
+          <div class="image">
+              <img src="./big-roll-grilled-seaweed.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Big Roll Grilled Seaweed (12 packs)</h3>
+              <div class="price"> RM 18 </div>
+          </div>
+    </div>
+
+        <div class="box">
+          <div class="image">
+              <img src="./makado.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Makado French Fries Salt&Seaweed (Two Flavor)</h3>
+              <div class="price"> RM 22 </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+              <img src="./bento.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Bento Squid Seafood Snack (12 packs)</h3>
+              <div class="price"> RM 10 </div>
+          </div>
+        </div>
+
+          <div class="box">
+          <div class="image">
+              <img src="./peanut-bbq.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>        
+          <div class="content">
+              <h3>Koh Kae Peanut BBQ</h3>
+              <div class="price"> RM 14 </div>
+          </div>
+       </div>
+
+       <div class="box">
+          <div class="image">
+              <img src="./dorkbua-lotus-chicken-drumstick.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Dorkbua Lotus Drumstick Crisp Hot & Spicy</h3>
+              <div class="price"> RM 5</div>
+          </div>
+          </div>
+
+          <div class="box">
+          <div class="image">
+              <img src="./cornae.jpg" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Cornae Corn Snacks</h3>
+              <div class="price"> RM 9 </div>
+          </div>
+        </div>
+
+
+  </div>
+
+</section>
+</section>
+
+
+
+<!--
+- About Us
+-->
+
+<section class="about" id="about">
+
+  <h1 class="heading"> <span> About </span> Us </h1>
+
+  <div class="row">
+
+      <div class="video-container">
+          <video src="about-1.mp4" loop autoplay muted></video>
+      </div>
+
+      <div class="content">
+          <h3>Why Choose Us?</h3>
+          <p>We may be an agency but we function like a startup.We're flexible,agile and committed to your pruduct packing and delivery.
+          Think of us as an extension of your team,using our experience to create results that everyone is insanely proud of.We've been 
+          lucky enough to work with some amazing clients.We working with a variety of clients ranging from single person companies,YC Alumni and VC backed startups,right through to Fortune 500 enterprises.
+          </p>
+          <p>Our Company's principal activity is in the sell and sales global snacks We have a Sales and Marketing office in Shah Alam, 
+          Selangor.In Malaysia, our company include household names such as Jack ‘n Jill Potato Chips, Roller Coaster,Snek Ku and more. 
+          Our company have touched Malaysians' lives through the years and to offer the best in quality, value, convenience and snacking 
+          enjoyment for every fun occasion.</p>
+          <a href="#" class="btnnn">read more</a>
+      </div>
+
+  </div>
+
+</section>
+
+
+
+<!--
+- Icons
+-->
+
+<section class="icons-container">
+
+  <div class="icons">
+      <img src="./icon-1.png" alt="">
+      <div class="info">
+          <h3>free delivery</h3>
+          <span>on all orders</span>
+      </div>
+  </div>
+
+  <div class="icons">
+      <img src="./icon-2.png" alt="">
+      <div class="info">
+          <h3>10 days returns</h3>
+          <span>moneyback guarantee</span>
+      </div>
+  </div>
+
+  <div class="icons">
+      <img src="./icon-3.png" alt="">
+      <div class="info">
+          <h3>offer & gifts</h3>
+          <span>on all orders</span>
+      </div>
+  </div>
+
+  <div class="icons">
+      <img src="./icon-4.png" alt="">
+      <div class="info">
+          <h3>secure paymens</h3>
+          <span>protected by paypal</span>
+      </div>
+  </div>
+ 
+</section>
+
+
+<!--
+- Review
+-->
+
+<section class="review" id="review">
+
+  <h1 class="heading"> Customer's <span>Review</span> </h1>
+  
+  <div class="box-container">
+  
+      <div class="box">
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </div>
+          <p>Product safely delivered,packing is good,wrapped well.Product also taste well.I really love it!Global Snacks Shop is easy to oreder and give us convenient.I think I will buy it again.</p>
+          <div class="user">
+              <img src="./pic-1.png" alt="">
+              <div class="user-info">
+                  <h3>Justin Jia</h3>
+                  <span>Happy Customer</span>
+              </div>
+          </div>
+          <span class="fas fa-quote-right"></span>
+      </div>
+  
+      <div class="box">
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </div>
+          <p>Received product that I buy with good condition.Good value for money and taste.Global Snacks Shop was provide good service for me.Thanks</p>
+          <div class="user">
+              <img src="./pic-2.png" alt="">
+              <div class="user-info">
+                  <h3>Yang Xiao Mi</h3>
+                  <span>Happy Customer</span>
+              </div>
+          </div>
+          <span class="fas fa-quote-right"></span>
+      </div>
+  
+      <div class="box">
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </div>
+          <p>Fast delivery and price of snacks was resonable.Global Snacks Shop have many variety snacks and give me opportunity to try the snacks that is newest.I will repurchase again next time.</p>
+          <div class="user">
+              <img src="./pic-3.png" alt="">
+              <div class="user-info">
+                  <h3>Xiao Sha</h3>
+                  <span>Happy Customer</span>
+              </div>
+          </div>
+          <span class="fas fa-quote-right"></span>
+      </div>
+  
+  </div>
+      
+  </section>
+  
+  <!--
+  - Contact
+  -->
+
+  <section class="contact" id="contact">
+
+    <h1 class="heading"> <span> Contact </span> Us </h1>
+
+    <div class="row">
+
+        <form action="">
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="number" placeholder="number" class="box">
+            <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="bttn">
+        </form>
+
+        <div class="image">
+            <img src="./contact-2.gif" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+
+
+  <!--
+  - Order
+  -->
+
+
+  <section class="order" id="order">
+
+    <h1 class="heading"> <span>Order</span> Now </h1>
+
+    <div class="row">
+        
+        <div class="image">
+            <img src="contact.gif" alt="">
+        </div>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="food name">
+            </div>
+
+            <textarea placeholder="address" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="order now" class="btn">
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Popular Categories</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">America"s Snacks</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">China's Snacks</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Japan's Snacks</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Korea's Snacks</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Malaysia's Snacks</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Thailand's Snacks</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Variety Snacks</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Hot Sales</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link"></a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Company</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Legal Notice</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">About us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Secure payment</a>
+          </li>
+
+          <div class="footer-bottom">
+
+            <div class="container">
+      
+              <img src="./card.png" alt="payment method" class="payment-img">
+      
+              <p class="copyright">
+                Copyright &copy; <a href="#">Global Snacks Shop</a> all rights reserved.
+              </p>
+      
+            </div>
+      
+          </div>
+      
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Hot Sale</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Payment</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              45,Jalan Gorila 07,Taman Banana 17 
+              31780,Ipoh,Perak.
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+607936-8058" class="footer-nav-link">+06 20020219</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    
+  </footer>
+
+  
+  
+
+  <!--
+    - custom js link
+  -->
+  <script src="./script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+    <script type="module" src="htpp://unpkg.com/ionicons@5.5.2/dist/dist/ionicons/ionicons.esm.
+    js"></script>
+    <script nomodule src="http://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

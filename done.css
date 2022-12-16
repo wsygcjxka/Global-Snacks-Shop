@@ -1,0 +1,298 @@
+/*------------------------------*\
+  #style.css
+\*------------------------------*/
+
+/**
+* copyright 2021 @codewithsadee
+*/
+
+
+
+
+
+/*------------------------------*\
+  #VARIABLE
+\*------------------------------*/
+
+:root {
+
+    /**
+    * Colors
+     */
+
+     --onyx: hsl(0,0%,25%);
+     --azure: hsl(219,77%,60%);
+     --white: hsl(0,0%,100%);
+     --platinum: hsl(0,0%,91%);
+     --gainsboro: hsl(0,0%,90%);
+     --red-salsa: hsl(0,77%,60%);
+     --dim-gray: hsl(0,0%,39%);
+     --davys-gray: hsl(0,0%,30%);
+     --spanish-gray: hsl(0,0%,62%);
+     --quick-silver: hsl(0,0%,64%);
+
+     /**
+      *Typography
+      */
+
+      --fs-28: 28px;
+      --fs-24: 24px;
+      --fs-18: 18px;
+      --fs-15: 15px;
+      --fs-14: 14px;
+
+      --fw-5: 500;
+      --fw-6: 600;
+      --fw-7: 700;
+
+      /**
+      * Others
+      */
+
+      --px: 60px;
+      --radius: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------------------*\
+  #HEADER
+\*------------------------------*/
+
+
+.header{ 
+  display: flex;
+  padding: 0 3%;
+  align-items: center;
+  gap: 3rem;
+}
+
+.header a{
+  padding-left: 140px;
+  padding: 10px 2rem;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: rgb(14, 12, 12);
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header img{
+  width: 100px;
+  height: 90px;
+}
+
+
+.ok {
+  padding-top: 350px;
+  padding-left: 680px;
+  height: 100%;
+  width: 100%;
+  background: rgba(243, 170, 11, 0.26);
+}
+
+.ok .gun .modal-box{
+  display: absolute;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  width: 100%;
+  padding: 35px 25px;
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow: 2px 2px 40px #f9e076;
+  transform: translate(-50%, -50%) scale(1.2);
+  
+}
+
+.ok .gun .modal-box i {
+  font-size: 70px;
+  color: #9c6137;
+}
+
+.ok .gun .modal-box h2 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ok .gun .modal-box h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ok .rok-btn{    
+    display: inline-block;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    background:#333;
+    color:#fff;
+    padding:1rem 4rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:1250px){
+    .wow .image{
+        position: relative;
+        width: 67%;
+        margin: 0 auto;
+    }
+    
+    .container .picture{
+        position: relative;
+        width: 67%;
+        margin: 0 auto;
+    }
+
+    .animated-text{ 
+        top: 33%;
+    }
+
+    
+}
+
+@media (max-width:1200px){
+    .ok{
+        padding-left: 600px;
+    }
+   
+}
+
+@media (max-width:1150px){
+    .ok{
+        padding-left: 580px;
+    }
+    
+}
+
+@media (max-width:1100px){
+    .ok{
+        padding-left: 560px;
+    }
+    
+}
+
+@media (max-width:1050px){
+    .ok{
+        padding-left: 540px;
+    }
+        
+}
+
+@media (max-width:1020px){
+    .ok{
+        padding-left: 520px;
+    }
+        
+}
+    
+@media (max-width:991px){
+    
+    html{
+        font-size: 8px;
+        display: block;
+    }
+  
+    header .icons i{
+        font-size: 3rem;
+    }
+
+    .ok{
+        padding-left: 500px;
+    }
+    
+}
+
+@media (max-width:768px){
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100%; left:0; right:0;
+        background: #FFF4C2;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        border-bottom: .2rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a {
+        margin:1.5rem;
+        padding:1.5rem;
+        background:#fff;
+        border:.1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+   
+
+    header .icons i{
+        font-size: 2rem;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+
+    #sabi{
+        width: 300px;
+    }
+
+    .show-cart td{
+        font-size: 10px;
+    }
+ 
+    .modal-title{
+        font-size: 20px;
+    }
+  
+    #cart-close{
+       top: 5px;
+       right: 5px;
+       font-size: 20px;
+    }
+}  
+     
+
+@media (max-width:450px){
+    
+    html{
+        font-size: 50%;
+    }
+
+
+    .heading{
+        font-size: 3rem;
+    }
+
+}

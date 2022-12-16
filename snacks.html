@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment and Add to Card</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="global.css">
+
+</head>
+<body>
+
+<!-- header section starts     -->
+
+<section class="header">
+
+    <img src="logo.png.jpg">
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">Categories</a>
+        <a href="index.html">Products</a>
+        <a href="index.html">About us</a>
+        <a href="index.html">Review</a>
+        <a href="index.html">Contact</a>
+        <a href="index.html">Order</a>
+    </nav>
+
+
+</section>
+
+<!-- header section ends    -->
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="cart.css">
+
+  <!--
+    - google font link
+  -->
+  <link
+    href="https://font.googleapis.com/css?family=Source+Sans+3:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+    rel="stylesheet">
+</head>
+
+<body>
+
+
+  <!--
+    - main container
+  -->
+    
+  <main class="container">
+    
+    <h1 class="heading">
+        <ion-icon name="cart-outline"></ion-icon>
+    </h1>
+
+    <div class="item-flex">
+
+       <!--
+        - checkout section
+       -->
+       <section class="checkout">
+
+        <h2 class="section-heading">Payment Details</h2>
+
+        <div class="payment-form">
+
+            <div class="payment-method">
+
+                <button class="method selected">
+                    <ion-icon name="card"></ion-icon>
+
+                    <span>Credit Card</span>
+
+                    <ion-icon class="checkmark fill" name="checkmark-circle"></ion-icon>
+                </button>
+
+                <button class="method">
+                    <ion-icon name="logo-paypal"></ion-icon>
+                
+
+                    <span>Paypal</span>
+
+                    <ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon>
+                </button>
+
+            </div>
+
+            <form action="#">
+                
+                <div class="cardholder-name">
+                    <label for="cardholder-name" class="label-default">Cardholder name</label>
+                    <input type="text" name="cardholder-name" id="cardholder-name" class="input-default">
+                </div>
+
+                <div class="card-number">
+                    <label for="card-number" class="label-default">Card number</label>
+                    <input type="number" name="card-number" id="card-number" class="input-default">
+                </div>
+
+                <div class="input-flex">
+
+                    <div class="expire-date">
+                        <label for="expire-date" class="label-default">Expiration date</label>
+
+                        <div class="input-flex">
+
+                           <input type="number" name="month" id="expire-date" placeholder="12" min="1" max="12"
+                             class="input-default">
+                            /
+                            <input type="number" name="year" id="expire-date" placeholder="99" min="1" max="99"
+                              class="input-default">
+
+                        </div>
+                    </div>
+
+                    <div class="cvv">
+                        <label for="cvv" class="label-default">CVV</label>
+                        <input type="number" name="cvv" id="cvv" class="input-default">
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <form action="done.html">
+        <button class="btn btn-primary">
+            <b>Pay</b> RM <span id="payAmount">0.00</span>
+        </button>
+        </form>
+
+       </section>
+
+
+       <!--
+         - cart section
+       -->
+       <section class="cart">
+        
+        <div class="cart-item-box">
+
+            <h2 class="section-heading">Order Here</h2>
+
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="lay's-chip.jpg" alt="" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Lay's Chip</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+                            
+                            <div class="price">
+                                RM <span id="price">7.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="oreo-cookie.jpg" alt="" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Oreo Cookie (Family size)</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+                            
+                            <div class="price">
+                                RM <span id="price">13.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="nestle-toll-house.jpg" alt="" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Nestle Toll House Morsels</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+                            
+                            <div class="price">
+                                RM <span id="price">40.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="frito-twists.jpg" alt="" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Frito Twists Honey BBQ</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+                            
+                            <div class="price">
+                                RM <span id="price">20.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="pepperidge-farm-goldfish.jpg" alt="" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Pepperidge Farm Goldfish</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+                            
+                            <div class="price">
+                                RM <span id="price">19.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="reese's.jpg" alt="" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Reese's Peanut Butter Cups Minature Cups</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">20.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="latiao.jpg" alt="" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Weilong Spicy Strips Snacks Super (5 packs)</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+                            
+                            <div class="price">
+                                RM <span id="price">20.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="moyushuang.jpg" alt="" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Weilong Mo Yu Shuang (20 packs)</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+                            
+                            <div class="price">
+                                RM <span id="price">16.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="yam-chip.jpg" alt="" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Yu Wei Zhi Yuan Yam Chip (6 packs)</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">14.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="mochi-sandwich.jpg" alt="" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Baicaoflavor Mochi Sandwich</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">21.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="oatmeal.jpg" alt="" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Ocak Fruit Yougurt Oatmeal Cereal</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">30.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="bamboo-shoots.jpg" alt="" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Pickled Crispy Bamboo Shoots (10 packs per box)</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">28.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="pocky.jpg" alt="" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Pocky Cookies & Cream (10 packs)</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">36.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="white-lover.jpg" alt="" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Ishiya Shiroi Koibito White Chocolate (12 packs)</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">64.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="orihiro-jelly.jpg" alt="" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Orihiro Konjac Jelly Lemon (6 packs)</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">8.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="tokyo-banana.jpg" alt="" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Tokyo Banana Original Flavor (8 pieces per box)</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">72.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="caramel-corn.jpg" alt="P" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Tohato Caramel Corn Bitter (Original taste)</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">6.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="jagabee-french-fries.jpg" alt="P" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Calbee Jagabee Potato Sticks Snack Happy Butter</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">15.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="onion-spring.jpg" alt="P" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Nongshim Onion Rings</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">7.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="honey-butter-almond.jpg" alt="j" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Tom's Farm Honey Butter Almond</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">30.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="squid-peanut.jpg" alt="P" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Orion Squid Peanut Ball </h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">8.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="pocachip.jpg" alt="P" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Orion Pocachip Original</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">7.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="kkokkal-corn.jpg" alt="P" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Lotte Original Kko Kkal Corn Chips</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">9.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="honey-apple.jpg" alt="P" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Nongshim Honey&Apple Twist Snack</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">16.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="snek-ku.jpg" alt="j" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Shoyuemi Snek Ku Original Flavor Snack (1 kg)</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">18.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="double-decker-chicken-cracker.jpg" alt="P" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Double Decker Chicken Cracker (3 packs) </h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">6.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="win-2-tomato.jpg" alt="P" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Win 2 Tomato Flavor Potato Crisp (30 packs)</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">8.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="mister-potato-hot-spicy.jpg" alt="P" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Mister Potato Crisps Hot & Spicy (2 packs)</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">8.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="mamee.jpg" alt="P" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Mamee Monster Chicken Noodle Snack (10 packs)</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">6.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="roller-coaster.jpg" alt="P" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Jack'n Jill Roller Coaster (2 packs)</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">5.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="big-roll-grilled-seaweed.jpg" alt="j" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Big Roll Grilled Seaweed (12 packs)</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">18.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="makado.jpg" alt="P" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Makado French Fries Salt&Seaweed (Two Flavor)</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">22.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="bento.jpg" alt="P" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Bento Squid Seafood Snack (12 packs)</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">10.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="peanut-bbq.jpg" alt="P" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Koh Kae Peanut BBQ</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">14.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="dorkbua-lotus-chicken-drumstick.jpg" alt="j" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Dorkbua Lotus Drumstick Crisp Hot & Spicy</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">18.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="cornae.jpg" alt="P" width="80px" height="75px" class="product-img">
+                    </div>
+
+                    <div class="detail">
+
+                        <h4 class="product-name">Cornae Corn Snacks</h4>
+
+                        <div class="wrapper">
+
+                            <div class="product-qty">
+                                <button id="decrement">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+
+                                <span id="quantity">0</span>
+
+                                <button id="increment">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="price">
+                                RM <span id="price">9.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="wrapper">
+
+            <div class="discount-token">
+
+                <label for="discount-token" class="label-default">Gift card/discount code</label>
+
+                <div class="wrapper-flex">
+
+                    <input type="text" name="discount-token" id="discount-token" class="input-default">
+
+                    <button class="btn btn-outline">Apply</button>
+
+                </div>
+
+            </div>
+
+            <div class="amount">
+
+                <div class="subtotal">
+                    <span>Subtotal</span> <span>RM <span id="subtotal">0.00</span></span>
+                </div>
+
+                <div class="tax">
+                    <span>Tax</span> <span>RM <span id="tax">0.00</span></span>
+                </div>
+
+                <div class="shipping">
+                    <span>Shipping</span> <span>RM <span id="shipping">0.00</span></span>
+                </div>
+
+                <div class="total">
+                    <span>Total</span> <span>RM <span id="total">0.00</span></span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    </div>
+
+    </main>
+
+
+
+
+
+
+    <!--
+        - custom js link
+    -->
+    <script src="java.js"></script>
+
+    <!--
+        - ionicon link
+    -->
+    <script type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+    
+
+
+
+
+
